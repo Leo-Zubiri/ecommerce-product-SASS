@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2.4rem 2.4rem 2rem;
+}
+header .hamburger-logo-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+header .hamburger-logo-group .hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+header .hamburger-logo-group .hamburger .line {
+  background-color: hsl(219deg, 9%, 45%);
+  width: 1.5rem;
+  height: 0.3rem;
+}
+header .hamburger-logo-group .menu {
+  background-color: hsla(0deg, 0%, 0%, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 10;
+}
+header .hamburger-logo-group .menu .slide-menu {
+  background-color: hsl(0deg, 0%, 100%);
+  height: 100%;
+  width: 65vw;
+  padding: 2.3rem;
+}
+header .hamburger-logo-group .menu .slide-menu img {
+  transition: transform 0.5s ease;
+}
+header .hamburger-logo-group .menu .slide-menu img:hover {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+header .hamburger-logo-group .menu .slide-menu ul {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+header .hamburger-logo-group .menu .slide-menu ul a, header .hamburger-logo-group .menu .slide-menu ul :active, header .hamburger-logo-group .menu .slide-menu ul :visited {
+  color: hsl(220deg, 13%, 13%);
+  text-decoration: none;
+}
+header .hamburger-logo-group .menu .slide-menu ul a:hover, header .hamburger-logo-group .menu .slide-menu ul :active:hover, header .hamburger-logo-group .menu .slide-menu ul :visited:hover {
+  text-decoration: underline;
+  opacity: 0.75;
+}
+header .hamburger-logo-group .hidden {
+  display: none;
+}
+header .cart-avatar-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+header .btnCart {
+  cursor: pointer;
+  position: relative;
+}
+header .btnCart .cart-count {
+  position: absolute;
+  top: -25%;
+  right: -25%;
+  background-color: hsl(26deg, 100%, 55%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.1rem 0.6rem;
+  border-radius: 1rem;
+  line-height: 100%;
+}
+header .avatar {
+  width: 3rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+header .avatar:hover {
+  border: 2px solid hsl(26deg, 100%, 55%);
+  border-radius: 50%;
+}
+
+.lightbox {
+  position: relative;
+}
+.lightbox .product-hero {
+  width: 100%;
+}
+.lightbox .previous {
+  left: 4%;
+}
+.lightbox .previous:hover {
+  left: 3%;
+}
+.lightbox .next {
+  right: 4%;
+}
+.lightbox .next:hover {
+  right: 3%;
+}
+.lightbox .arrow {
+  position: absolute;
+  top: 50%;
+  /*Ajusta el 50 centrado*/
+  transform: translateY(-50%);
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  /* Se sale la flecha por lo que hay que ajustar*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/*# sourceMappingURL=main.css.map */
