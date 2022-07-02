@@ -18,6 +18,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 2.4rem 2.4rem 2rem;
+  position: relative;
 }
 header .hamburger-logo-group {
   display: flex;
@@ -111,6 +112,77 @@ header .avatar:hover {
   border: 2px solid hsl(26deg, 100%, 55%);
   border-radius: 50%;
 }
+header .cart {
+  position: absolute;
+  right: 1rem;
+  top: calc(100% + 1rem);
+  width: 35.5rem;
+  z-index: 1;
+  background-color: white;
+  border-radius: 1rem;
+}
+header .cart .cart-header {
+  border-bottom: 1px solid hsl(220deg, 14%, 75%);
+  padding: 2.4rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+header .cart .products-in-cart .item {
+  margin: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .cart .products-in-cart .item .product-img {
+  width: 5rem;
+  border-radius: 0.5rem;
+}
+header .cart .products-in-cart .item .details {
+  color: hsl(219deg, 9%, 45%);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+header .cart .products-in-cart .item .details .price-group {
+  display: flex;
+  gap: 0.6rem;
+}
+header .cart .products-in-cart .item .details .price-group .total-amount {
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+header .cart .products-in-cart .item #btnDelete {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+header .cart .products-in-cart .item #btnDelete:hover {
+  cursor: pointer;
+  background-color: hsl(25deg, 100%, 94%);
+}
+header .cart .msg-empty {
+  color: hsl(219deg, 9%, 45%);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 7.8rem 0;
+}
+header .cart .checkout {
+  background-color: hsl(26deg, 100%, 55%);
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 2.4rem;
+  padding: 1.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+header .cart .hidden {
+  display: none;
+}
+header .hidden {
+  display: none;
+}
 
 .lightbox {
   position: relative;
@@ -145,6 +217,101 @@ header .avatar:hover {
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.product {
+  padding: 2rem 2.4rem 4.4rem 2.4rem;
+}
+.product .company-name {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(26deg, 100%, 55%);
+  letter-spacing: 0.18rem;
+}
+.product .title {
+  color: hsl(220deg, 13%, 13%);
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-top: 1.3rem;
+  line-height: 118%;
+}
+.product .description {
+  font-size: 1.5rem;
+  margin-top: 1.6rem;
+  color: hsl(219deg, 9%, 45%);
+  line-height: 165%;
+}
+.product .price-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.product .price-wrapper .group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.product .price-wrapper .group .price {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.product .price-wrapper .group .discount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(26deg, 100%, 55%);
+  background-color: hsl(25deg, 100%, 94%);
+  margin-left: 1.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.product .price-wrapper .old-price {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: hsl(220deg, 14%, 75%);
+  text-decoration: line-through;
+}
+.product .count-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(223deg, 64%, 98%);
+  padding: 1.2rem 2.4rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+.product .count-wrapper .counter {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.product .count-wrapper #btnMinus, .product .count-wrapper #btnPlus {
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.product .count-wrapper #btnMinus:hover, .product .count-wrapper #btnPlus:hover {
+  opacity: 0.5;
+  background-color: hsl(25deg, 100%, 94%);
+}
+.product .btn {
+  background-color: hsl(26deg, 100%, 55%);
+  color: white;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.55rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  padding: 1.9rem;
+  box-shadow: 0px 20px 30px 0px hsl(25deg, 100%, 94%);
+  cursor: pointer;
+}
+.product .btn img {
+  height: 2rem;
+  filter: brightness(300%);
 }
 
 /*# sourceMappingURL=main.css.map */
