@@ -219,6 +219,9 @@ header .hidden {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.lightbox .thumb-gallery {
+  display: none;
+}
 
 .product {
   padding: 2rem 2.4rem 4.4rem 2.4rem;
@@ -438,7 +441,8 @@ header .hidden {
   }
   .product .count-btn-group .counter-wrapper {
     width: 62%;
-    padding: 1.2rem;
+    border-radius: 1rem;
+    padding: 1.2rem 0.5rem;
   }
   .product .count-btn-group .btn {
     width: 100%;
